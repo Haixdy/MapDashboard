@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     addLegend(map);
 
     // Fetch and process the CSV data
-    fetchCSVData('http://localhost:8000/data.csv')
+    fetchCSVData('https://yourusername.github.io/yourrepository/data.csv')
         .then(csvText => {
             const rows = parseCSVData(csvText);
             rows.forEach((data, index) => {
